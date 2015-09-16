@@ -1,0 +1,47 @@
+<head>
+  <title>LetsDiscuss</title>
+</head>
+
+<body>
+	  	<div class="container">
+		    {{#if currentUser}}
+      			{{> discussion}}
+    		{{else}}
+      			{{> login}}
+    		{{/if}}
+	  	</div>
+</body>
+
+<template name="login">
+  	<div class="row">
+  		<center><div class="col-md-6 col-md-offset-3">
+  			{{> loginButtons}}
+  			<p class="lets_discuss">Discussion Board</p>
+  		</div></center>
+  	</div>
+</template>
+<template name="discussion">
+  	<div class="row">
+  		<center><div class="col-md-6 col-md-offset-3">
+  		<p class="lets_discuss">Discussion Board</p>
+  		</div></center>
+  		<div class="col-md-3">
+  			{{> loginButtons}}
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-12 add_comments">
+  			<p class="topic">Discussion about meteor !!!</p>
+  			<form action="" class="new-comment">
+  				<input type="text" class="form-control" Placeholder="Add your comments to discussion board..." name="comment" required>
+  				<ul>
+	      			{{#each comments}}
+	        			<li><b class="username">{{username}}</b> {{comment}}  <p class="time">{{currentTime createdAt}}</p></li>
+	      			{{/each}}
+    			</ul>
+  			</form>
+  		</div>
+  		
+  	</div>
+</template>
+

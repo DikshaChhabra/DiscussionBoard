@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+@font-face{src: url(fonts/cac_champagne.ttf);font-family: champagne;}
+body{
+	background: url('images/black.jpg') no-repeat fixed;height: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a{text-decoration: none !important;font-family: champagne;font-size: 30px;}
+#login-sign-in-link , #login-sign-in-link:hover{ color: white;border: 2px solid white;padding: 6px;}
+#login-name-link{color: white;}
+#login-buttons{margin-top: 60px;}
+.lets_discuss{color: white;font-size: 70px;font-family: champagne;}
+.add_comments{background-color: #ffffff;border: 1px solid #e5e5e5;border-radius: 5px;box-shadow: 0 1px 2px rgba(0,0,0,.05);}
+.username{color: rgb(75,102,160);}
+.topic{font-family: champagne;font-size: 40px;text-align: center;}
+.time{color: gray;}
